@@ -13,9 +13,14 @@
 
   text-align: center;
   border: 1px black solid;
+  background-color: white;
   box-shadow: rgb(144, 183, 202) 0.5rem 0.5rem;
   padding: 2rem;
   margin: 1rem;
+
+  &:hover{
+
+  }
   h4{
     color:#131313;
   }

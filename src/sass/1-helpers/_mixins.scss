@@ -1,0 +1,63 @@
+//**************
+/*  Mixins allow you to define styles that can
+ be re-used throughout your stylesheet.
+ They make it easy to avoid using
+ non-semantic classes like .float-left,
+ and to distribute collections of styles in
+ libraries. 
+ 
+Syntax: 
+
+        @mixin mixin-name($arguments-optional,$secondary-argument) {
+            style: value;
+            # {$arguments-optional}: $secondary-argument; //arguments can define the styling property or the value
+        }
+
+
+        @mixin mixin-name($optional-arg: 50%) {
+            style: $optional-arg;  //if no argument is given, default 50% value is used
+        }
+
+Use: 
+
+    .class{
+        @include mixin-name;
+
+    */
+
+//**************
+
+@mixin component-wrapper {
+  border: rgb(27, 156, 185) 2px solid;
+  background-color: white;
+  padding: 2rem;
+
+
+
+}
+
+$xs-width: 480px;
+$sm-width: 768px;
+$md-width: 992px;
+$lg-width: 1200px;
+
+@mixin media-xs {
+    @media (max-width: #{$xs-width}) {
+	    @content
+    }
+};
+@mixin media-small {
+    @media (max-width: #{$sm-width}) {
+	    @content
+    }
+};
+@mixin media-medium {
+    @media (max-width: #{$md-width}) {
+	    @content
+    }
+};
+@mixin media-large {
+    @media (max-width: #{$lg-width}) {
+	    @content
+    }
+};

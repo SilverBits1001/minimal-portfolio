@@ -1,0 +1,108 @@
+.gradient-background {
+}
+.test {
+  border-radius: 10px;
+}
+
+.project-card {
+  transition: 0.3s all;
+  background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.5);
+  border-radius: 0;
+  height: auto;
+
+  .project-img {
+    @include media-medium {
+      height: 300px;
+    }
+    height: 500px;
+    width: auto;
+  }
+
+  .info-wrap {
+    padding: 1rem;
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.3);
+    border-radius: 10px;
+  }
+
+  .project-description {
+  }
+
+  .project-tech {
+    font-weight: map-get($font-weight, $key: "very-bold");
+    font-size: 0.85rem;
+  }
+}
+
+/* #projects{
+  background-image: url("../../assets/softGradients/Mesh\ 9.png");
+  background-size: 100%;
+  background-position: center;
+  
+
+} */
+
+.test-project-container {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.project-list-img {
+  max-height: 400px;
+  height: 90%;
+}
+
+.project-list-title {
+  /*   border-bottom: 1px solid #131313;
+  border-right: 1px solid #131313; */
+  font-size: 3rem;
+}
+.project-list-number {
+  /*   border-bottom: 1px solid #131313;
+ */
+  font-size: 1.25rem;
+}
+
+.project-list-description {
+}
+
+.list-bg {
+  margin-bottom: 20vh;
+}
+
+.sticky {
+  @include media-small {
+    position: inherit;
+  }
+  position: sticky;
+  top: 20vh;
+  padding: 0 3rem 0 0;
+  padding: 2rem;
+  height: 60vh;
+
+}
+
+.list-card {
+  margin-bottom: 200px;
+  border: #181818 solid 2px;
+  border-radius: 10px;
+}
+
+.mesh-bg {
+  background-color: rgb(224, 243, 255);
+}
+
+.project-tech {
+  font-weight: map-get($font-weight, $key: "very-bold");
+  font-size: 0.85rem;
+}
+
+.about-me-title {
+  font-weight: map-get($font-weight, "bold");
+}
+
+.about-me-info {
+  font-size: 1.2rem;
+}

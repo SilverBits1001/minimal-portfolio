@@ -1,0 +1,17 @@
+types of things to include in this folder
+
+Core styles that will make up your site or application. Base rules are commonly applied to an element using the element selector itself. Thrown into this bucket would be the CSS reset, typography, forms and buttons. These base styles will each have their own Sass file for easy management, here is an example from a _typography.scss Sass file.
+
+_base.scss
+what happens to the basic html tags i.e html, img, a, 
+
+
+_buttons.scss
+_global.scss
+_links.scss
+
+_reset.scss
+_selection-colors.scss
+determins the colors of items that have been selected
+
+_typography.scss

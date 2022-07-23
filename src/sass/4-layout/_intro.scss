@@ -1,0 +1,41 @@
+#intro {
+  text-align: center;
+ 
+
+  h1,
+  h2 {
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
+  svg {
+    font-size: 2rem;
+  }
+  img {
+    @media (min-width: 576px) {
+      width: 80%;
+    }
+    width: 30%;
+  }
+  .large {
+    color: $primary-color;
+  }
+  .arrow {
+    position: relative;
+    bottom: 50px;
+  }
+
+  .intro-content {
+    min-height: 90vh;
+    margin-top: 10vh;
+  }
+
+  .projects-button {
+    border: 2px solid grey;
+    padding: 0.7rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: initial;
+  }
+}

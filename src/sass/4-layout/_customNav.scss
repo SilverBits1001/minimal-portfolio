@@ -1,0 +1,29 @@
+.custom-nav {
+  display: flex;
+  width: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 10px 30px -10px rgb(189, 189, 189);
+  z-index: 50;
+}
+
+.brand{
+    font-weight: map-get($font-weight, "very-bold");
+ 
+}
+
+.contact-link {
+  font-weight: map-get($font-weight, "very-bold");
+  font-size: 1rem;
+}
+
+.nav-pic {
+  height: 50px;
+}
+
+.logo{
+    font-size: 72px;
+    background-image: url('../../assets//PNGs/Grad_07.png');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

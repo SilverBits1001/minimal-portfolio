@@ -1,20 +1,27 @@
 .test {
   border: black 2px solid;
   padding: 3rem;
-  box-shadow: rgb(144, 183, 202) .5rem .5rem;
+  box-shadow: rgb(144, 183, 202) 0.5rem 0.5rem;
+  background-color: #ffffff;
+  background-color: #ffffff;
+
+  
+
 }
-.half-color{
+
+
+
+  .half-color {
   position: absolute;
   width: 600px;
   height: 500px;
-  z-index:-1;
-  background-color: rgb(144, 183, 202) ;
+  z-index: -1;
+  background-color: rgb(144, 183, 202);
 }
 
 .noise {
-
-  background:  url('./grain.svg');
-filter: contrast(150%);
+  background: url("./grain.svg");
+  filter: contrast(150%);
 }
 
 .overlay {
@@ -23,10 +30,6 @@ filter: contrast(150%);
   mix-blend-mode: difference;
 }
 
-.isolate {
-  isolation: isolate;
-  /* ... */
-}
 
 .center {
   text-align: center;

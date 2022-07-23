@@ -1,0 +1,4 @@
+any smaller components that can be used 'modularly' styling goes here
+Ideally for smaller componets that can be reused, any bigger area would go in layout folder
+
+i.e. _video.scss, _clock.scss, 

@@ -1,7 +1,7 @@
-import MovieSwiperImg from '../../assets/movieappdemo.png'
+import MovieSwiperImg from '../../assets/movieswiper.png'
 import GreenGuideDemo from '../../assets/greenguidedemo.png'
-import NewsAppDemo from '../../assets/newsappdemo.png'
-import WeatherDemo from '../../assets/weatherdemo.png'
+import NewsAppDemo from '../../assets/newsapp.png'
+import WeatherDemo from '../../assets/weatherapp.png'
 
 export default [
 

@@ -1,0 +1,4 @@
+any layout components styling goes here
+Ideally for large areas, any smaller area would go in Modules folder
+
+i.e. _footer.css, _siteHeader.scss, siteMainContent.scss

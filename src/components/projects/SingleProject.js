@@ -2,40 +2,70 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-export default function SingleProject({ project }) {
+export default function SingleProject({ project, parallax }) {
+  
+
   return (
-    <Col className='project-card col-12 p-3  col-lg-3 '>
 
-      {/*       <Col className=' col-6'>
-          <img className='project-img' src={project.img} alt='Movie Swiper App' />
-        </Col> */}
-      <span >
-        <h4 className='project-title'>{project.title}</h4>
-        <p className='mt-3 left'>{project.description}</p>
-<span className='d-flex justify-content-center flex-wrap'>
-{project.technologies.map((tech, index) => (
-          <ul key={index}>
-            {tech}
-          </ul>
+    <Col className='mesh-bg project-card mx-auto col-md-12 p-5 m-md-5 '>
+      <Row className='px-3'>
+        <Col className='col-md-5 col-12 my-auto d-flex justify-content-center '>
 
-        ))}
-</span>
+            <img className='project-img'  data-swiper-parallax={parallax.slow} src={project.img} alt='Movie Swiper App' />
 
-        <div className=''>
-          <a>
-            <FaGithub />
-          </a>
-          <a>
-            <FaExternalLinkAlt />
-          </a>
-        </div>
 
-      </span>
+        </Col>
+
+        <Col className='info-wrap mx-auto my-auto col-12 col-md-7'>
+          <h2  data-swiper-parallax={parallax.medium} className=''>{project.title}
+          </h2>
+          <p  data-swiper-parallax={parallax.fast} className='project-description'>{project.description}</p>
+          <span data-swiper-parallax={parallax.fast}  className='d-flex flex-wrap'>
+            {project.technologies.map((tech, index) => (
+              <ul key={index} className='project-tech'>
+                {tech}
+              </ul>
+
+            ))}
+          </span>
+        </Col>
 
 
 
+
+
+
+      </Row>
+      {/*       <Row>
+        <Col className='col-12 '>
+          <span className='d-flex flex-wrap'>
+            {project.technologies.map((tech, index) => (
+              <ul key={index} className='project-tech'>
+                {tech}
+              </ul>
+
+            ))}
+          </span>
+        </Col>
+        <Col className='col-12 '>
+          <div className=''>
+            <a>
+              <FaGithub />
+            </a>
+            <a>
+              <FaExternalLinkAlt />
+            </a>
+          </div>
+
+        </Col>
+      </Row>
+ */}
 
     </Col>
+
+
+
+
 
 
   )

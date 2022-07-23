@@ -2,3 +2,12 @@ genuine
 adventurous
 expressive/funny
 quirky
+
+
+colors 
+#c19435
+#bb6a35
+#bb5a42
+#b06571
+#8d6076
+#6e7581
