@@ -4,8 +4,8 @@ import Resume from '../../assets/CColemanResume.pdf'
 export default function SideLinks() {
     return (
 
-        <Row className='d-none d-lg-flex'>
-            <div className='vertical d-flex my-auto'>
+        <Row className='d-none d-md-flex'>
+            <div className='vertical d-flex justify-content-end'>
                 <Col className='my-5 col-lg-4 col-3'>
                     <a target="_blank" rel="noreferrer" href='https://github.com/SilverBits1001'>
                         github

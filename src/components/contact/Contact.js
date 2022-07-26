@@ -57,8 +57,7 @@ export default function Contact() {
                     </div>
                     <div>
                         <a className='contacts' href="mailto: coreycoleman1001@gmail.com">
-                            coreycoleman1001@gmail.com
-                        </a>
+email@email.com                        </a>
                     </div>
                 </Col>
                 <Col>

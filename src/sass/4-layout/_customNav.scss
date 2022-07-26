@@ -1,29 +1,28 @@
 .custom-nav {
-  display: flex;
+
   width: 100%;
   left: 0;
-  background-color: white;
-  box-shadow: 0 10px 30px -10px rgb(189, 189, 189);
+  background: linear-gradient($background-color , transparent 75%) ;
   z-index: 50;
 }
 
-.brand{
-    font-weight: map-get($font-weight, "very-bold");
- 
+.brand {
+  font-weight: map-get($font-weight, "very-bold");
+  color: $primary-color;
+
 }
 
 .contact-link {
   font-weight: map-get($font-weight, "very-bold");
-  font-size: 1rem;
+  color: $base-color;
 }
 
 .nav-pic {
   height: 50px;
 }
 
-.logo{
-    font-size: 72px;
-    background-image: url('../../assets//PNGs/Grad_07.png');
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.logo {
+  background-image: url("../../assets//PNGs/Grad_07.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

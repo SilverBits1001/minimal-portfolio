@@ -29,7 +29,6 @@
 
   .project-tech {
     font-weight: map-get($font-weight, $key: "very-bold");
-    font-size: 0.85rem;
   }
 }
 
@@ -42,27 +41,37 @@
 } */
 
 .test-project-container {
+ 
   &::-webkit-scrollbar {
     display: none;
   }
   overflow-x: scroll;
   overflow-y: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+ 
+    right: 50px;
+    margin-top: 35%;
+    z-index: 10;
+  }
 }
 
 .project-list-img {
-  max-height: 400px;
-  height: 90%;
+  transform: rotate(-30deg);
+  max-height: 350px;
+  height: 400px;
 }
 
 .project-list-title {
   /*   border-bottom: 1px solid #131313;
   border-right: 1px solid #131313; */
-  font-size: 3rem;
+
 }
 .project-list-number {
   /*   border-bottom: 1px solid #131313;
  */
-  font-size: 1.25rem;
+
 }
 
 .project-list-description {
@@ -81,28 +90,81 @@
   padding: 0 3rem 0 0;
   padding: 2rem;
   height: 60vh;
-
 }
 
 .list-card {
   margin-bottom: 200px;
   border: #181818 solid 2px;
   border-radius: 10px;
+  background-color: rgb(94, 22, 22);
+  
 }
-
+$hue: -20deg;
 .mesh-bg {
-  background-color: rgb(224, 243, 255);
+
+  box-shadow:  fade-in( #000000,  1) 0rem 0 0.75rem;
+  background-image: url("../../assets/blob-scene-haikei\ (1).svg");
+  filter: hue-rotate($hue);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
 }
 
 .project-tech {
   font-weight: map-get($font-weight, $key: "very-bold");
-  font-size: 0.85rem;
+font-size: $fs-sm;
 }
 
-.about-me-title {
-  font-weight: map-get($font-weight, "bold");
+
+
+.project-img-bg {
+  filter: hue-rotate(-$hue);
+  opacity: 0.9;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  z-index: 1;
+  border-radius: 15px;
 }
 
-.about-me-info {
-  font-size: 1.2rem;
+.index-up {
+  z-index: 10;
+}
+
+.project-img-wrapper {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.project-list-details {
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+  height: 100%;
+  background: radial-gradient(
+    rgba($color: $background-color, $alpha: 0.15) 20%,
+    transparent 75%
+  );
+}
+
+.tech-wrapper {
+  position: relative;
+  bottom: 0;
+}
+
+.test-project-container-gradient {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(0.25turn, transparent 95%, black);
+}
+
+
+#projects{
+  background: linear-gradient(#3d24c7 , transparent 90% );
 }

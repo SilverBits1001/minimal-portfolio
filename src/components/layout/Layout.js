@@ -12,15 +12,17 @@ import SideLinks from '../sidelinks/SideLinks'
 
 export default function Layout() {
     return (
-        <Container fluid>
+        <div >
             <MyNavbar />
+      
             <Intro />
-             <ProjectListSection/>
-{/*             <About />
- */}
-            {/*   <Projects />  */}
-             <ProjectsSwiper /> 
-            <Contact /> 
-        </Container>
+        {/*      <ProjectListSection/> */}
+       
+ 
+               <Projects />  
+               <About />
+       {/*       <ProjectsSwiper />  */}
+  {/*           <Contact />  */}
+        </div>
     )
 }

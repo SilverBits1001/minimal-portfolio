@@ -25,3 +25,13 @@ svg {
   font-size: 1.5rem;
   margin: 0.5rem;
 }
+
+
+.large-header {
+  margin: 0;
+  font-size: clamp(40px, 8vw, 80px);
+}
+.regular-header {
+  margin: 0;
+  font-size: clamp(40px, 8vw, 60px);
+}

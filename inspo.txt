@@ -11,3 +11,8 @@ colors
 #b06571
 #8d6076
 #6e7581
+
+
+blob genrator: https://app.haikei.app/
+
+sass cheat sheet https://devhints.io/sass

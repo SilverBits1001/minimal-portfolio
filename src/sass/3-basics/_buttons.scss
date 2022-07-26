@@ -1,8 +1,52 @@
 button {
-  background-color: transparent;
-  padding: .75rem 1.25rem;
-  margin: 0.5rem;
+  background-color: $primary-color;
   font-weight: map-get($font-weight, 'bold');
+  color: black;
+  border: 0px;
+
+  
+}
+
+.button {
+  margin: 0 .3rem;
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  font-size: $fs-lg;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--green-tint);
+    outline: none;
+  }
+  &:after {
+    display: none !important;
+  }
+
+  &.blue{
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+  
+  }
+  &.white{
+    color: $background-color;
+    background-color: $base-color;
+    border: 1px solid $base-color;
+    font-weight: map-get($font-weight, 'bold' );
+  
+  }
+}
+
+.nav-link{
+  &:hover,
+  &:focus,
+  &:active{
+    color: $primary-color;
+  }
 }
 
 

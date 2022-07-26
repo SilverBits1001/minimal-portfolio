@@ -1,12 +1,9 @@
 import MovieSwiperImg from '../../assets/movieswiper.png'
-import GreenGuideDemo from '../../assets/greenguidedemo.png'
+import GreenGuideDemo from '../../assets/thegreenguide-netlify-app-1024xFULLdesktop-adba9e.jpg'
 import NewsAppDemo from '../../assets/newsapp.png'
 import WeatherDemo from '../../assets/weatherapp.png'
 
 export default [
-
-
-
 
     {
         title: 'Movie Swiper App',
@@ -47,6 +44,7 @@ export default [
         link: 'https://thegreenguide.netlify.app/',
         technologies: ['HTML5/CSS', 'jQuery', 'Bootstrap']
 
-    }
+    },
+    
 ]
 

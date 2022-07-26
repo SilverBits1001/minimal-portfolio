@@ -1,32 +1,58 @@
 * {
-  font-family: "Roboto";
+font-family: "Roboto";
 }
 
 html,
 body {
-  
- color: #484848;
-/*   background-color:hsla(50,89%,92%,1);
+  color: $base-color;
+  font-size: $fs-lg;
+  background-color: $background-color;
+  /*    background-color:hsla(50,89%,92%,1);
   background-image:
-  radial-gradient(at 50% 24%, hsla(50,89%,92%,.3) 0px, transparent 50%),
-  radial-gradient(at 84% 64%, hsla(50,89%,92%,.3) 0px, transparent 50%),
-  radial-gradient(at 42% 50%, hsla(50,89%,92%,.3) 0px, transparent 50%),
-  radial-gradient(at 21% 68%, hsla(50,89%,92%,.3) 0px, transparent 50%),
-  radial-gradient(at 93% 12%, hsla(351,67%,56%,.3) 0px, transparent 50%),
-  radial-gradient(at 20% 100%, hsla(251,84%,66%,.3) 0px, transparent 50%),
-  radial-gradient(at 0% 0%, hsla(270,96%,44%,.3) 0px, transparent 50%),
-  radial-gradient(at 100% 100%, hsla(19,88%,71%,.3) 0px, transparent 50%);
- */ 
-}a, .nav-link{
+  radial-gradient(at 50% 24%, hsla(50,89%,92%,.5) 0px, transparent 50%),
+  radial-gradient(at 84% 64%, hsla(50,89%,92%,.5) 0px, transparent 50%),
+  radial-gradient(at 42% 50%, hsla(50,89%,92%,.5) 0px, transparent 50%),
+  radial-gradient(at 21% 68%, hsla(50,89%,92%,.5) 0px, transparent 50%),
+  radial-gradient(at 93% 12%, hsla(351,67%,56%,.5) 0px, transparent 50%),
+  radial-gradient(at 20% 100%, hsla(251,84%,66%,53) 0px, transparent 50%),
+  radial-gradient(at 0% 0%, hsla(270,96%,44%,.5) 0px, transparent 50%),
+  radial-gradient(at 100% 100%, hsla(19,88%,71%,.5) 0px, transparent 50%);
+ */
+}
+
+a {
+  display: inline-block;
   text-decoration: none;
-  color: #484848;
-  &:hover{
-    color:  rgb(3, 132, 171);
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    color: $primary-color;
   }
 }
-.nav-link{
-color: #484848;
+a,
+.nav-link {
+  text-decoration: none;
+  color: $base-color;
+  &:hover {
+  }
+}
+.nav-link {
+
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $base-color;
+  line-height: 1.1;
+}
 
-
+h1{
+  color:$primary-color;
+}

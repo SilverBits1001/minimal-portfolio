@@ -1,3 +1,27 @@
-#about{
-margin: 0.5rem;
+#about {
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  .about {
+    border-radius: 10px;
+  }
+
+  a {
+    color: white;
+  }
+  .about-me-title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    color: white;
+  }
+
+  .about-me-info {
+  }
 }
