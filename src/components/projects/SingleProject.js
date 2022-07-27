@@ -50,27 +50,3 @@ export default function SingleProject({ project, parallax, index }) {
   )
 }
 
-{/*       <Row>
-        <Col className='col-12 '>
-          <span className='d-flex flex-wrap'>
-            {project.technologies.map((tech, index) => (
-              <ul key={index} className='project-tech'>
-                {tech}
-              </ul>
-
-            ))}
-          </span>
-        </Col>
-        <Col className='col-12 '>
-          <div className=''>
-            <a>
-              <FaGithub />
-            </a>
-            <a>
-              <FaExternalLinkAlt />
-            </a>
-          </div>
-
-        </Col>
-      </Row>
- */}

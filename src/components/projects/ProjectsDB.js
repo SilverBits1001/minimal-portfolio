@@ -3,7 +3,7 @@ import GreenGuideDemo from '../../assets/thegreenguidedemo.jpg'
 import NewsAppDemo from '../../assets/newsapp.png'
 import WeatherDemo from '../../assets/weatherapp.png'
 
-export default [
+const ProjectsDB = [
 
     {
         title: 'Movie Swiper App',
@@ -48,3 +48,4 @@ export default [
     
 ]
 
+export default ProjectsDB;

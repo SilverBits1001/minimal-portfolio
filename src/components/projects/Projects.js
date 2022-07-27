@@ -1,23 +1,11 @@
-import React, { useRef } from 'react'
-import SingleProject from './SingleProject'
-import ProjectsDB from './ProjectsDB'
+import React from 'react';
+import SingleProject from './SingleProject';
+import ProjectsDB from './ProjectsDB';
 import { motion } from 'framer-motion';
 
 export default function Projects() {
 
 
-  const scrollRef = useRef(null)
-  const onWheel = e => {
-
-    const container = scrollRef.current;
-    const containerScrollPosition = scrollRef.current.scrollLeft;
-    console.log(e.deltaY + containerScrollPosition);
-
-    container.scrollTo({
-      top: 0,
-      left: containerScrollPosition + e.deltaY,
-    });
-  };
   return (
     <motion.div
       initial={{ opacity: 0, }}
@@ -26,7 +14,7 @@ export default function Projects() {
       className=' py-md-3' id='projects'
     >
 
-      <div ref={scrollRef} className='ps-md-5 p-3  d-flex test-project-container '>
+      <div className='ps-md-5 p-3  d-flex test-project-container '>
 
         {ProjectsDB.map((project, index) => (
           <motion.div
