@@ -1,5 +1,5 @@
 import MovieSwiperImg from '../../assets/movieswiper.png'
-import GreenGuideDemo from '../../assets/thegreenguide-netlify-app-1024xFULLdesktop-adba9e.jpg'
+import GreenGuideDemo from '../../assets/thegreenguidedemo.jpg'
 import NewsAppDemo from '../../assets/newsapp.png'
 import WeatherDemo from '../../assets/weatherapp.png'
 

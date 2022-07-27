@@ -1,8 +1,6 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import { FaArrowDown, FaAngleDown, FaLinkedin, FaAngleRight, FaGithub } from "react-icons/fa";
+import { Row, Col } from 'react-bootstrap'
 import SideLinks from '../sidelinks/SideLinks';
-import gradienttriangle from '../../assets/PNGs/Grad_09.png';
 import { motion } from 'framer-motion';
 import Resume from '../../assets/CColemanResume.pdf'
 export default function Intro() {
@@ -10,20 +8,20 @@ export default function Intro() {
 
     //add gooey image distortion on hover to the gradients
 
-    const one = <h3> Hi, I am </h3>
+    const one = <h3 className='ms-0'> Hi, I am </h3>
 
-    const two = <h1 className='large-header'>Corey Coleman</h1>
-    const three = <h2 className='regular-header'>A Front End Engineer.</h2>
+    const two = <h1 className='regular-header'>Corey Coleman</h1>
+    const three = <h2 className='large-header'>A Front End Engineer.</h2>
     const four = (
         <>
-            <p className='p-1  '>
-                I build websites with a focus on responsive design
-            </p>
+            <h3 style={{ }} className='p-1  '>
+                I build websites with a focus on responsive design.
+            </h3>
 
         </>
     )
     const five = (
-        <div>
+        <div className='mt-3'>
             <a href='#projects' className='button blue'>
                 View My Projects
             </a>
@@ -43,7 +41,7 @@ export default function Intro() {
             initial={{ opacity: 0, }}
             animate={{ opacity: 1 }}
             transition={{ duration: .5 }}
-            className=' d-flex m ps-sm-5 ps-3 ' fluid id='intro'
+            className=' d-flex m ps-sm-5 ps-3 '  id='intro'
         >
 
 
@@ -55,21 +53,22 @@ export default function Intro() {
                 {/*    <Col className='col-6 intro-test d-none d-sm-inline'>
                         <img className='' src={gradienttriangle} alt='gradient triangle' />
                     </Col>  */}
-                <Col className='col-lg-8 col-12 mx-auto mt-5'>
+                <Col className='col-lg-8 col-12 mx-auto my-auto mt-5' >
                     <Row>
 
-                        <Col className='col-lg-12 mx-auto p-2 align-center'>
+                        <Col className='col-lg-12 mx-auto  p-2 align-center '>
                             {content.map((item, index) => (
-                                <>
+                                
                                     <motion.div
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.4, delay: (index * .15) }}
-
+                                        className=''
+                                        key={index}
                                     >
-                                        <div key={index}>{item}</div>
+                                        {item}
                                     </motion.div>
-                                </>
+                            
                             ))}
 
                         </Col>
@@ -106,58 +105,3 @@ export default function Intro() {
 }
 
 
-<>
-    <div className='d-lg-flex  intro-content'>
-        <Row className=''>
-            <Col className='d-none d-sm-inline col-lg-6 col-12 my-auto red'>
-
-                <img className='' src={gradienttriangle} alt='gradient triangle' />
-
-            </Col>
-            <Col className='col-lg-5 mx-auto me-lg-auto me-lg-5 my-auto'>
-                <Row>
-
-                    <Col className=' col-lg-12 mx-auto p-2 align-center'>
-                        <h1>
-                            Hi, I am <br className='d-sm-none' /><span className='large'>Corey Coleman</span>.
-
-                        </h1>
-                        <h2 className='my-1'>
-                            A Front End Engineer.
-                        </h2>
-                        <p className='mt-lg-5 mt-4 p-1  mx-sm-5'>
-                            Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.
-                        </p>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className='mx-auto'>
-                        {/*       <button className=''>
-                                Projects
-                            </button> */}
-                        <a>
-                            <h4>
-
-                            </h4>
-                        </a>
-                        {/*  <a>
-                                <FaLinkedin className='icon' />
-                            </a>  */}
-                    </Col>
-
-                </Row>
-            </Col>
-
-        </Row>
-
-
-        <SideLinks />
-    </div>
-
-
-    <a href='#projects' className='arrow'>
-
-        <FaAngleDown className='icon' />
-    </a>
-
-</>

@@ -17,7 +17,7 @@ export default function SideLinks() {
                     </a>
                 </Col>
                 <Col className='my-5 col-lg-4 col-3'>
-                    <a href={Resume} target="_blank" rel="noreferrer" eventKey="link-2">
+                    <a href={Resume} target="_blank" rel="noreferrer" >
                         resume
                     </a>
                 </Col>

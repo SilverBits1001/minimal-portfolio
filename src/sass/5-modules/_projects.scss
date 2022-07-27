@@ -33,7 +33,6 @@
 }
 
 /* #projects{
-  background-image: url("../../assets/softGradients/Mesh\ 9.png");
   background-size: 100%;
   background-position: center;
   
@@ -64,6 +63,11 @@
 }
 
 .project-list-title {
+  &:hover{
+
+
+
+  }
   /*   border-bottom: 1px solid #131313;
   border-right: 1px solid #131313; */
 
@@ -111,6 +115,9 @@ $hue: -20deg;
   position: relative;
   overflow: hidden;
   min-height: 300px;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .project-tech {
