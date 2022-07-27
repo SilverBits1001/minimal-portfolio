@@ -2,7 +2,6 @@ import React from 'react';
 import SingleProject from './SingleProject';
 import ProjectsDB from './ProjectsDB';
 import { motion } from 'framer-motion';
-import { Container } from 'react-bootstrap';
 
 export default function Projects() {
 
