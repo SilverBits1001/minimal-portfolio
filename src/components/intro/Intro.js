@@ -14,8 +14,8 @@ export default function Intro() {
     const three = <h2 className='large-header'>A Front End Engineer.</h2>
     const four = (
         <>
-            <h3 style={{ }} className='p-1  '>
-                I build websites with a focus on responsive design.
+            <h3  className='p-1 tagline  '>
+                I build websites and mobile applications with a focus on responsive design.
             </h3>
 
         </>
@@ -41,7 +41,7 @@ export default function Intro() {
             initial={{ opacity: 0, }}
             animate={{ opacity: 1 }}
             transition={{ duration: .5 }}
-            className=' d-flex m ps-sm-5 ps-3 '  id='intro'
+            className=' d-flex m ps-sm-5 px-3 '  id='intro'
         >
 
 

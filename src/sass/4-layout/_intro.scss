@@ -29,5 +29,7 @@
     margin-top: 10vh;
   }
 
-
+.tagline{
+  font-weight: map-get($font-weight, 'light' );
+}
 }
