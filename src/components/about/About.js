@@ -7,31 +7,31 @@ import { DiCss3, DiGit, DiHtml5, DiJavascript, DiReact, DiSass } from "react-ico
 const skills = [
     {
         name: 'Html',
-        icon: <DiHtml5 />
+        icon: <DiHtml5 size={40} />
     },
     {
         name: 'CSS',
-        icon: <DiCss3/> ,
+        icon: <DiCss3 size={40} />,
     },
     {
-        name: 'Javascript' ,
-        icon: <DiJavascript/> ,
+        name: 'Javascript',
+        icon: <DiJavascript size={40} />,
     },
     {
-        name: 'React' ,
-        icon: <DiReact/> ,
+        name: 'React',
+        icon: <DiReact size={40} />,
     },
-/*     {
-        name: 'React Native' ,
-        icon: <DiReact/> ,
-    }, */
+         {
+            name: 'React Native' ,
+            icon: <DiReact size={40}/> ,
+        },
     {
-        name: 'Sass' ,
-        icon: <DiSass/> ,
+        name: 'Sass',
+        icon: <DiSass size={40} />,
     },
     {
-        name: 'Git' ,
-        icon: <DiGit/> ,
+        name: 'Git',
+        icon: <DiGit size={40} />,
     },
 
 ]
@@ -43,8 +43,8 @@ export default function About() {
         <motion.div
             initial={{ opacity: 0, translateY: 50 }}
             whileInView={{ opacity: 1, translateY: 0 }}
-            viewport={{ once: true, amount: 0.40, }}
-            className=' d-flex m ps-sm-5 ps-3 py-3 '
+            viewport={{ once: true, amount: 0.30, }}
+            className=' d-flex m ps-sm-5 ps-3 py-5 '
             id='about'
         >
 
@@ -57,7 +57,7 @@ export default function About() {
                     </h3>
                 </div>
                 <Row className='about  mx-auto'>
-                    <Col className=' mx-auto col-lg-7 col-12'>
+                    <Col className='mx-auto col-lg-7 col-12'>
 
 
                         <div className='about-me-info'>
@@ -71,16 +71,16 @@ export default function About() {
 
                         </div>
                     </Col>
-                    <Col >
+                     <Col className='mx-auto my-auto tech-container' >
 
-                        <p>Here are a few technologies I’ve been working with recently:</p>
-                        <ul className="row skills-list p-0 p-md-auto ">
+                        <ul className="row skills-list p-md-auto mx-auto ">
                             {skills.map((skill, index) => (
-                                <li className='col-6 ' key={index}>{skill.icon}{skill.name} </li>
+                                <li className='col-4 col-sm-6   ' key={index}>{skill.icon} <span className='d-none d-sm-inline-flex'>{skill.name}</span> </li>
                             ))}
                         </ul>
-                    </Col>
+                    </Col> 
                 </Row>
+
             </Container>
         </motion.div>
     )
