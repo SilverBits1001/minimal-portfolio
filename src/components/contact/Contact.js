@@ -1,8 +1,5 @@
 import React, { useState, useRef } from 'react'
 import { Row, Col, Container } from 'react-bootstrap';
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
-import wavebttm from '../../assets/pagebttm1.svg'
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import SentEmail from '../../assets/sent.json'
 import Lottie from 'lottie-react'
@@ -56,7 +53,7 @@ export default function Contact() {
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                     <Form.Control as="textarea" rows={7} placeholder="Message" />
                                 </Form.Group>
-                                <a onClick={()=> setShow(false)} className='button blue contact-button'>Say Hello</a>
+                                <a href='#contact' onClick={()=> setShow(false)} className='button blue contact-button'>Say Hello</a>
 
 
                             </Form>
