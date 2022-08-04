@@ -26,7 +26,7 @@ export default function Projects() {
             initial={{ opacity: 0, translateY: 50 }}
             whileInView={{ opacity: 1, translateY: 0 }}
             viewport={{ once: true, amount: 0.20, }}
-            className='col-lg-5 col-12 me-5 mesh-bg p-3'
+            className='col-lg-5 col-sm-8 col-12 me-5 mesh-bg p-3'
             onClick={() => window.open(project.link)}>
             <SingleProject index={index} project={project} parallax={{ slow: '-300', medium: '-200', fast: '-100' }} />
           </motion.div>

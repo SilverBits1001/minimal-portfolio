@@ -1,23 +1,16 @@
 #about {
   color: white;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-bottom: 2px solid $primary-color;
-
-
+  background-color: #02223b ;
+  background: linear-gradient( transparent, rgba(0, 0, 0, 0.4) );
   .about {
+
+  }
+  .title-wrapper {
   }
 
   a {
-    color: white;
   }
   .about-me-title {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
     white-space: nowrap;
     color: white;
   }
@@ -26,15 +19,21 @@
   }
   .skills-list {
     list-style: none;
+    border-bottom: 1px solid $base-color;
+    border-top: 1px solid $base-color;
+
+
   }
   li {
-    font-weight: map-get($font-weight, "light");
+
+    font-weight: map-get($font-weight, "bold");
     font-size: $fs-xl;
     &::before {
       content: "";
     }
   }
-
+  .skill-name {
+  }
   .tech-intro {
   }
 
