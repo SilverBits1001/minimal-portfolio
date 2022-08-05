@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 import { DiCss3, DiGit, DiHtml5, DiJavascript, DiReact, DiSass } from "react-icons/di";
+import Resume from '../../assets/CColemanResume.pdf'
 
 const iconSize = 50;
 
@@ -66,7 +67,7 @@ export default function About() {
                                 Fast-forward to today, and I’ve had the privilege of working at <a href="https://us.mullenlowe.com/" rel="noopener noreferrer" target="_blank">an advertising agency</a>, <a href="https://starry.com/" rel="noopener noreferrer" target="_blank">a start-up</a>, <a href="https://www.apple.com/" rel="noopener noreferrer" target="_blank">a huge corporation</a>, and <a href="https://scout.camd.northeastern.edu/" rel="noopener noreferrer" target="_blank">a student-led design studio</a>. My main focus these days is building accessible, inclusive products and digital experiences at <a href="https://upstatement.com/" rel="noopener noreferrer" target="_blank">Upstatement</a> for a variety of clients.
                             </p>
                             <p>I also recently <a href="https://www.newline.co/courses/build-a-spotify-connected-app" rel="noopener noreferrer" target="_blank">launched a course</a> that covers everything you need to build a web app with the Spotify API using Node &amp; React.</p>
-                            <a href='#projects' className='button blue my-2'>
+                            <a href={Resume} target="_blank" rel="noreferrer" className='button blue my-3'>
                                 View My Resume
                             </a>
                         </div>
