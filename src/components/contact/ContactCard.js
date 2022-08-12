@@ -25,7 +25,7 @@ export default function ContactCard({ setShow }) {
                     <span>
                         <h3 className='contact-title  mb-4 '>Lets connect </h3>
                         <p className='pb-md-0 contact-info    '>
-                            Thanks for checking out my website, I’m currently looking to join a new team of developers. If you think we might be a good fit for one another, reach out and send send me an  email.
+                            Thanks for checking out my website, I’m currently looking to join a new team of developers. If you think we might be a good fit for one another, feel free to reach out and send me an  email.
                         </p>
                     </span>
             <a className='email' href="mailto: coreycoleman1001@gmail.com">

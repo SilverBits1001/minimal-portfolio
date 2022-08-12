@@ -25,7 +25,6 @@
 
   }
   li {
-
     font-weight: map-get($font-weight, "bold");
     font-size: $fs-xl;
     &::before {
@@ -33,8 +32,11 @@
     }
   }
   .skill-name {
+
   }
-  .tech-intro {
+  .tech {
+
+
   }
 
   /* h3:after {

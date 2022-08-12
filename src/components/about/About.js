@@ -61,12 +61,17 @@ export default function About() {
 
                         <div className='about-me-info'>
                             <p>
-                                My name is Corey and I enjoy creating  interactive digital experiences. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML &amp; CSS!
+                                Hi, My name is Corey, a Front End Engineer based in southern California. I enjoy creating clean yet performant digital experiences and am currently looking for Front-End engineering opportunities with a team that I can grow and learn with.
                             </p>
                             <p>
-                                Fast-forward to today, and I’ve had the privilege of working at <a href="https://us.mullenlowe.com/" rel="noopener noreferrer" target="_blank">an advertising agency</a>, <a href="https://starry.com/" rel="noopener noreferrer" target="_blank">a start-up</a>, <a href="https://www.apple.com/" rel="noopener noreferrer" target="_blank">a huge corporation</a>, and <a href="https://scout.camd.northeastern.edu/" rel="noopener noreferrer" target="_blank">a student-led design studio</a>. My main focus these days is building accessible, inclusive products and digital experiences at <a href="https://upstatement.com/" rel="noopener noreferrer" target="_blank">Upstatement</a> for a variety of clients.
+                                While, my main love is web and mobile app development through the React framework, I am currently working towards learning more back end technologies, such as Node.Js and Express.Js, to become a more well rounded and versatile developer.
                             </p>
-                            <p>I also recently <a href="https://www.newline.co/courses/build-a-spotify-connected-app" rel="noopener noreferrer" target="_blank">launched a course</a> that covers everything you need to build a web app with the Spotify API using Node &amp; React.</p>
+                            <p>
+                                When I am not mulling over bugs in my code, I usually spend my time reading (currently The Martian by Andy Weir) or listening to Dungeons and Dragons podcasts.
+                            </p>
+                            <p>
+
+                            </p>
                             <a href={Resume} target="_blank" rel="noreferrer" className='button blue my-3'>
                                 View My Resume
                             </a>
@@ -80,7 +85,7 @@ export default function About() {
 
                         <span className="row skills-list p-md-auto p-3  mx-auto ">
                             {skills.map((skill, index) => (
-                                <li className='col-4 col-lg-6   ' key={index}>{skill.icon} <span className='d-none d-sm-inline-flex skill-name'>{skill.name}</span> </li>
+                                <li className='col-4 col-lg-4 mx-auto justify-content-center align-items-center tech  d-flex flex-column ' key={index}>{skill.icon} <span className='d-none d-sm-inline-flex skill-name'>{skill.name}</span> </li>
                             ))}
                         </span>
                     </Col>

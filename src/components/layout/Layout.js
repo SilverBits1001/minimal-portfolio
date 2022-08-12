@@ -14,7 +14,7 @@ export default function Layout() {
             <Projects />
             <About />
             <Contact/>
-            <Footer/>
+          {/*   <Footer/> */}
         </div>
     )
 }
