@@ -1,16 +1,14 @@
-import { motion, useScroll, useSpring } from 'framer-motion'
+import { motion} from 'framer-motion'
 import React, { useEffect, useState } from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function MyNavbar() {
-  const { scrollYProgress } = useScroll()
-  const scaleX = useSpring(scrollYProgress)
-  const [hState, sethState] = useState(true);
+  const [navState, setNavState] = useState(true);
 
   const variants = {
     hidden: { opacity: 0, y: -45 },
-    visible: { opacity: 1, y: 0},
+    visible: { opacity: 1, y: 0 },
   }
 
   useEffect(() => {
@@ -18,13 +16,13 @@ export default function MyNavbar() {
     window.onscroll = function () {
       let y = window.scrollY;
       if (y > lastVal) {
-        sethState(false);
+        setNavState(false);
       }
       if (y < lastVal) {
-        sethState(true);
+        setNavState(true);
       }
       if (y === 0) {
-        sethState(true);
+        setNavState(true);
       }
       lastVal = y;
     };
@@ -34,15 +32,15 @@ export default function MyNavbar() {
   return (
     <motion.div
       initial="hidden"
-      animate={hState ? "visible" : "hidden"}
-      transition={{ duration:0 }}
+      animate={navState ? "visible" : "hidden"}
+      transition={{ duration: 0 }}
       variants={variants}
       id='navbar'
 
 
     >
 
-      <Navbar  className='custom-nav d-flex'>
+      <Navbar className='custom-nav d-flex'>
         <Container className='py-0'>
           <Navbar.Brand style={{ "color": "white" }} className='d-sm-flex brand  ' href="#home">CC.</Navbar.Brand>
           <div className=' align-items-center '>
