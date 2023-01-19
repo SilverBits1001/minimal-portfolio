@@ -42,14 +42,14 @@
 .test-project-container {
  
   &::-webkit-scrollbar {
-    display: none;
+    width: 7px;
+    height: 7px;
   }
   overflow-x: scroll;
   overflow-y: hidden;
   &:before {
     content: "";
     position: absolute;
- 
     right: 50px;
     margin-top: 35%;
     z-index: 10;
