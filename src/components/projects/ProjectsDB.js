@@ -2,9 +2,20 @@ import MovieSwiperImg from '../../assets/movieswiper.png'
 import GreenGuideDemo from '../../assets/thegreenguidedemo.jpg'
 import NewsAppDemo from '../../assets/newsapp.png'
 import WeatherDemo from '../../assets/weatherapp.png'
-
+import RealtyDemo from '../../assets/realtyapp.png'
 const ProjectsDB = [
 
+    {
+        title: 'Realty App',
+        img: RealtyDemo,
+        description: 'Realty app that app offers a user-friendly interface for browsing properties, saving favorites, and viewing property details details. Its map view allows users to easily find properties in relation to their location.',
+        /* In working on this project I familiarized myself with using Redux Toolkit to handle the application\'s state management. Moving forward I want to integrate this project with Firebase to allow for user interaction to see their friends\' "Want to Watch" list, and send movie reccomendations to each other. */
+        /* ' A sleek Tinder-style movie discovery app that allows users to swipe through movie suggestions. Provides users with details about the movie such as ratings, trailer, and even similar titles. Users can save movies they are interested to a list to watch later.' */
+        link: 'https://github.com/SilverBits1001/realty',
+        demo: null,
+        technologies: ['React Native', 'Redux Toolkit', 'Javascript']
+
+    },
     {
         title: 'Movie Swiper App',
         img: MovieSwiperImg,
