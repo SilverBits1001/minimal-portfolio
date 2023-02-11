@@ -13,7 +13,7 @@ export default function Projects() {
       transition={{ duration: .5 }}
       className=' py-md-3' id='projects'
     >
-<h3 className='ps-md-5'>
+<h3 className='ps-md-5 ps-3'>
   Projects
 </h3>
       <div className='ps-md-5 p-3  d-flex test-project-container '>
