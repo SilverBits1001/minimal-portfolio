@@ -8,7 +8,7 @@ import Projects from '../projects/Projects'
 
 export default function Layout() {
     return (
-        <div >
+        <div id='Layout-Wrapper'>
             <MyNavbar />
             <Intro />
             <Projects />

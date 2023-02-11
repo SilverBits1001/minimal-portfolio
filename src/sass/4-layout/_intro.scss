@@ -29,7 +29,15 @@
     margin-top: 10vh;
   }
 
-.tagline{
-  font-weight: map-get($font-weight, 'light' );
-}
+  .tagline{
+    font-weight: map-get($font-weight, 'light' );
+    @media (min-width: 992px) {
+      font-size: 1.5rem;
+    }
+    font-size: 1em;
+  
+  }
+  .greeting{
+    font-weight: map-get($font-weight, 'light' );
+  }
 }

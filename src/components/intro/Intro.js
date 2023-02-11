@@ -8,15 +8,15 @@ export default function Intro() {
 
     //add gooey image distortion on hover to the gradients
 
-    const one = <h3 className='ms-0'> Hi, I am </h3>
+    const one = <h3 className='ms-0 greeting'> Hi, I am </h3>
 
     const two = <h1 className='regular-header'>Corey Coleman</h1>
-    const three = <h2 className='large-header'>A Front End Engineer.</h2>
+    const three = <h2 className='regular-header'>A Front End Engineer.</h2>
     const four = (
         <>
-            <h3  className='p-1 tagline  '>
+            <p  className='p-1 tagline  '>
                 I build websites and mobile applications with a focus on responsive design.
-            </h3>
+            </p>
 
         </>
     )
