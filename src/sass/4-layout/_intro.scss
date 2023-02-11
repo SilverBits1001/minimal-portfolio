@@ -1,9 +1,12 @@
 #intro {
   margin: 0;
+  background-color: $background-color;
   background-image: url("../../assets/layered-waves-haikei.svg");
+  
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
+
 
   p {
     text-align: left;
