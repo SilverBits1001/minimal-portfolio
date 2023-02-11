@@ -68,8 +68,10 @@ export default function About() {
 
                             <p>
                                 When I'm not coding, I enjoy reading (currently reading The Martian) and listening to Dungeons and Dragons podcasts. I am dedicated to continuously learning and growing as a developer, and I am eager to bring my skills and enthusiasm to a team where I can make a positive impact. Thank you for visiting my website, and I hope to hear from you soon!
-                            </p>
-                        
+                            </p> 
+                            <a href={Resume} target="_blank" rel="noreferrer" className='button blue my-3'>
+                                View My Resume
+                            </a>
 
 
 
