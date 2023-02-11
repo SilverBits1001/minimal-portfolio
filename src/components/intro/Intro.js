@@ -11,13 +11,12 @@ export default function Intro() {
     const one = <h3 className='ms-0 greeting'> Hi, I am </h3>
 
     const two = <h1 className='regular-header'>Corey Coleman</h1>
-    const three = <h2 className='regular-header'>A Front End Engineer.</h2>
+    const three = <h2 className='regular-header'>A Front End Developer.</h2>
     const four = (
         <>
-            <p  className='p-1 tagline  '>
-                I build websites and mobile applications with a focus on responsive design.
+            <p className='p-1 tagline  '>
+                Bringing your ideas to life through responsive web and mobile experiences.
             </p>
-
         </>
     )
     const five = (
@@ -41,7 +40,7 @@ export default function Intro() {
             initial={{ opacity: 0, }}
             animate={{ opacity: 1 }}
             transition={{ duration: .5 }}
-            className=' d-flex m ps-sm-5 px-3 '  id='intro'
+            className=' d-flex m ps-sm-5 px-3 ' id='intro'
         >
 
 
@@ -58,17 +57,17 @@ export default function Intro() {
 
                         <Col className='col-lg-12 mx-auto  p-2 align-center '>
                             {content.map((item, index) => (
-                                
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.4, delay: (index * .15) }}
-                                        className=''
-                                        key={index}
-                                    >
-                                        {item}
-                                    </motion.div>
-                            
+
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.4, delay: (index * .15) }}
+                                    className=''
+                                    key={index}
+                                >
+                                    {item}
+                                </motion.div>
+
                             ))}
 
                         </Col>

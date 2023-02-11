@@ -60,7 +60,20 @@ export default function About() {
 
 
                         <div className='about-me-info'>
+
                             <p>
+                                Hello there! My name is Corey Coleman and I am a driven Front-End Developer based in Southern California. I have a strong passion for creating clean, performant, and intuitive digital experiences.  My proficiency lies in web and mobile app development using the React framework, and I am continually expanding my skillset to include back-end technologies like Node.js and Express.js.
+                            </p>
+
+
+                            <p>
+                                When I'm not coding, I enjoy reading (currently reading The Martian) and listening to Dungeons and Dragons podcasts. I am dedicated to continuously learning and growing as a developer, and I am eager to bring my skills and enthusiasm to a team where I can make a positive impact. Thank you for visiting my website, and I hope to hear from you soon!
+                            </p>
+                        
+
+
+
+                            {/* <p>
                                 Hi, My name is Corey, a Front End Engineer based in southern California. I enjoy creating clean yet performant digital experiences and am currently looking for Front-End engineering opportunities with a team that I can grow and learn with.
                             </p>
                             <p>
@@ -74,7 +87,7 @@ export default function About() {
                             </p>
                             <a href={Resume} target="_blank" rel="noreferrer" className='button blue my-3'>
                                 View My Resume
-                            </a>
+                            </a> */}
                         </div>
 
 
